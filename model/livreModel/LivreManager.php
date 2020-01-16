@@ -32,4 +32,26 @@ class LivreManager
         $livre= $this->pdoStatement->fetchAll();
         return $livre;
     }
+
+    public function  readLivre($code){
+        $this->pdoStatement=$this->pdo->prepare("SELECT * FROM livre WHERE NUMLIVRE=:NUMLIVRE");
+        $this->pdoStatement->bindValue(":NUMLIVRE",$code,PDO::PARAM_STR);
+        $executeIsOk=$this->pdoStatement->execute();
+        if ($executeIsOk)
+        {
+            $livre = $this->pdoStatement->fetchObject('model\livreModel\Livre');
+            if ($livre === false)
+            {
+                return null;
+            }
+            else
+            {
+                return $livre;
+            }
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
