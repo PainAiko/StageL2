@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff387f43-a7ca-4b43-b033-192f6c6e726d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/livreModel/LivreManager.php" afterPath="$PROJECT_DIR$/model/livreModel/LivreManager.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,13 +29,14 @@
       <file leaf-file-name="LivreManager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/livreModel/LivreManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="307">
+              <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
               <folding>
                 <element signature="e#123#131#0#PHP" expanded="true" />
-                <marker date="1579211713204" expanded="true" signature="513:666" ph="SELECT auteu... livre" />
-                <marker date="1579211713204" expanded="true" signature="666:677" ph="SELECT categ... article" />
-                <marker date="1579211713204" expanded="true" signature="889:933" ph="SELECT * FRO... livre" />
+                <marker date="1579212113232" expanded="true" signature="513:666" ph="SELECT auteu... livre" />
+                <marker date="1579212113232" expanded="true" signature="666:677" ph="SELECT categ... article" />
+                <marker date="1579212113232" expanded="true" signature="889:933" ph="SELECT * FRO... livre" />
+                <marker date="1579212113232" expanded="true" signature="1517:1561" ph="SELECT * FRO... livre" />
               </folding>
             </state>
           </provider>
@@ -384,12 +384,12 @@
       <workItem from="1579026345111" duration="8362000" />
       <workItem from="1579106093824" duration="1694000" />
       <workItem from="1579154582805" duration="5039000" />
-      <workItem from="1579210600868" duration="1179000" />
+      <workItem from="1579210600868" duration="1509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50733000" />
+    <option name="totallyTimeSpent" value="51063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1382" height="784" extended-state="0" />
@@ -884,13 +884,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/livreModel/LivreManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        <state relative-caret-position="307">
+          <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
           <folding>
             <element signature="e#123#131#0#PHP" expanded="true" />
-            <marker date="1579211713204" expanded="true" signature="513:666" ph="SELECT auteu... livre" />
-            <marker date="1579211713204" expanded="true" signature="666:677" ph="SELECT categ... article" />
-            <marker date="1579211713204" expanded="true" signature="889:933" ph="SELECT * FRO... livre" />
+            <marker date="1579212113232" expanded="true" signature="513:666" ph="SELECT auteu... livre" />
+            <marker date="1579212113232" expanded="true" signature="666:677" ph="SELECT categ... article" />
+            <marker date="1579212113232" expanded="true" signature="889:933" ph="SELECT * FRO... livre" />
+            <marker date="1579212113232" expanded="true" signature="1517:1561" ph="SELECT * FRO... livre" />
           </folding>
         </state>
       </provider>

@@ -54,4 +54,29 @@ class LivreManager
             return false;
         }
     }
+
+    public function existLivre($code)
+    {
+        $this->pdoStatement=$this->pdo->prepare("SELECT * FROM livre WHERE NUMLIVRE=:NUMLIVRE");
+        $this->pdoStatement->bindValue(":NUMLIVRE",$code,PDO::PARAM_STR);
+        $executeIsOk = $this->pdoStatement->execute();
+        if ($executeIsOk) {
+
+            $livre = $this->pdoStatement->fetchObject('model\livreModel\Livre');
+
+            if($livre === false)
+            {
+                return false;
+            }
+
+            else
+            {
+                return true;
+            }
+        }
+        else
+        {
+            return false;//indiquer une erreure
+        }
+    }
 }
