@@ -6,28 +6,25 @@
  * Time: 17:35
  */
 
-namespace  Controller\clientController;
+namespace  Controller\livreController;
 
-require_once "../../model/clientModel/ClientManager.php";
-require_once "../../model/clientModel/Client.php";
+require_once "../../model/livreModel/LivreManager.php";
+require_once "../../model/livreModel/Livre.php";
 
-use model\clientModel\Client;
-use model\clientModel\ClientManager;
+use model\livreModel\Livre;
+use model\livreModel\LivreManager;
 
 
 
-$client=new Client();
-echo($_POST['nomCli']);
+$auteur=new Livre();
 
-$client->setIDCLIENT($_POST['numCli']);
-$client->setNOMCLIENT($_POST['nomCli']);
-        $client ->setPRENOMCLIENT($_POST['prenomCli']);
-         $client->setADRESSECLIENT($_POST['lieuCli']);
-         $client->setPHONECLIENT($_POST['telephone']);
-         //->setPHONECLIENT(($_POST['lieuCli']);
-        $client->setPROFFESSION($_POST['profession']);
 
-$clientMng=new ClientManager();
+$auteur->setNUMLIVRE($_POST['idLivre']);
+$auteur->setIDAUTEUR($_POST['titre']);
+$auteur->setTITRELIVRE($_POST['idAuteur']);
 
-$ok=$clientMng->createClient($client);
-var_dump($ok);
+
+$auteurMng=new LivreManager();
+
+$auteurMng->createLivre($auteur);
+//var_dump($ok);

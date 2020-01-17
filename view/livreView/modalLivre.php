@@ -62,7 +62,7 @@
             $('#oui,#non').hide();
             $.ajax(
                 {
-                    url:'saisiClient.php',
+                    url:'saisiLivre.php',
                     success:function (data) {
                         $('#detail').html(data).slideDown();
                     }
@@ -70,21 +70,21 @@
     
             });
            //insert 
-            $(document).on('submit','#form_ad_client',function (e) {
+            $(document).on('submit','#form_ad_livre',function (e) {
                 e.preventDefault();
                var datas=$(this).serialize();
-               var $numcli=$('#numCli').val();
+               var $idlivre=$('#idlivre').val();
                
-               if($numcli != '')
+               if($idlivre != '')
             	   {
 	            	   $.ajax({
 	                       type: 'post',
-	                        url:'../../Controller/clientController/createClient.php',
+	                        url:'../../Controller/livreController/createLivre.php',
 	                        data:datas,
 	                        success:function (data) {
 	                            $('#tb_client').html(data).slideDown();
 	                            //on rafraichit page pour avoir la modification
-	                            setTimeout("document.location.reload()", 1);
+	                            setTimeout("document.location.reload()", 10000);
 	                        }
 	                    });
             	   }

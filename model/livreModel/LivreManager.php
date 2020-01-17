@@ -79,4 +79,13 @@ class LivreManager
             return false;//indiquer une erreure
         }
     }
+
+    public  function  createLivre(Livre &$livre){
+        $this->pdoStatement=$this->pdo->prepare("INSERT INTO livre(NUMLIVRE,IDAUTEUR,TITRELIVRE)
+        VALUES (:NUMLIVRE,:IDAUTEUR,:TITRELIVRE)");
+        $this->pdoStatement->bindValue(":NUMLIVRE",$livre->getNUMLIVRE(),PDO::PARAM_STR);
+        $this->pdoStatement->bindValue(":IDAUTEUR",$livre->getIDAUTEUR(),PDO::PARAM_INT);
+        $this->pdoStatement->bindValue(":TITRELIVRE",$livre->getTITRELIVRE(),PDO::PARAM_STR);
+        $this->pdoStatement->execute();
+    }
 }
